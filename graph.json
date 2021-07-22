@@ -1,0 +1,784 @@
+{
+"graph_name":"shufflenet",
+"platform target":"Z1_0701",
+"total nodes number":60,
+"perf nodes number":57,
+"nodes":[{
+"layer node name":"gpu_0_data_0",
+"op_type":"Input",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_conv1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":237633536,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_conv1_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_pool1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":802816,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pool1_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_0_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":26091520,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_0_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_0_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231612416,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_0_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_0_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":104366080,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_0_branch2c_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_0_branch1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":105168896,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_0_branch1_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res2_0_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_1_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103161856,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_1_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_1_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231612416,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_1_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_1_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":105168896,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_1_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res2_1_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_2_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103161856,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_2_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_2_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231612416,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_2_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res2_2_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":105168896,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res2_2_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res2_2_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_0_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":206323712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_0_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_0_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231411712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_0_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_0_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103563264,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_0_branch2c_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_0_branch1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":206725120,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_0_branch1_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res3_0_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_1_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102961152,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_1_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_1_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231411712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_1_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_1_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103964672,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_1_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res3_1_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_2_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102961152,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_2_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_2_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231411712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_2_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_2_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103964672,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_2_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res3_2_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_3_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102961152,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_3_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_3_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231411712,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_3_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res3_3_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103964672,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res3_3_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res3_3_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_0_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":205922304,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_0_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_0_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_0_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_0_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103161856,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_0_branch2c_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_0_branch1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":206123008,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_0_branch1_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res4_0_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_1_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102860800,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_1_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_1_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_1_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_1_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103362560,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_1_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res4_1_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_2_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102860800,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_2_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_2_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_2_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_2_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103362560,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_2_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res4_2_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_3_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102860800,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_3_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_3_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_3_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_3_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103362560,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_3_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res4_3_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_4_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102860800,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_4_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_4_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_4_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_4_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103362560,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_4_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res4_4_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_5_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102860800,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_5_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_5_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231311360,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_5_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res4_5_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103362560,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res4_5_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res4_5_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_0_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":205721600,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_0_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_0_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231261184,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_0_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_0_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102961152,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_0_branch2c_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_0_branch1_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":205821952,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_0_branch1_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res5_0_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_1_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102810624,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_1_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_1_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231261184,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_1_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_1_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103061504,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_1_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res5_1_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_2_branch2a_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":102810624,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_2_branch2a_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_2_branch2b_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":231261184,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_2_branch2b_1",
+"op_type":"Convolution"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_res5_2_branch2c_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":103061504,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_res5_2_branch2c_1",
+"op_type":"Convolution"
+}
+,{
+"layer node name":"gpu_0_res5_2_branch2c_bn_2",
+"op_type":"Eltwise"
+}
+]
+}
+,{
+"layer node name":"subgraph_gpu_0_pool5_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":100352,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pool5_1",
+"op_type":"Pooling"
+}
+]
+}
+,{
+"layer node name":"OC2_DUMMY_0",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_pred_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":4098000,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_pred_1",
+"op_type":"FullyConnected"
+}
+]
+}
+,{
+"layer node name":"gpu_0_softmax_1_pre_reshape",
+"op_type":"Reshape",
+"running on":0,
+"ops_count":0
+}
+,{
+"layer node name":"subgraph_gpu_0_softmax_1",
+"op_type":"SubGraph",
+"running on":0,
+"ops_count":2000,
+"perf_node":true,
+"internal_nodes":[{
+"layer node name":"gpu_0_softmax_1",
+"op_type":"Softmax"
+}
+]
+}
+],
+"origin_idx":[[0],[1],[2],[3],[4],[5],[6,7],[8],[9],[10,11],[12],[13],[14,15],[16],[17],[18],[19,20],[21],[22],[23,24],[25],[26],[27,28],[29],[30],[31,32],[33],[34],[35],[36,37],[38],[39],[40,41],[42],[43],[44,45],[46],[47],[48,49],[50],[51],[52,53],[54],[55],[56,57],[58],[59],[60],[61,62],[63],[64],[65,66],[67],[68],[69,70],[71],[72],[73],[74],[75]],
+"run_node_idx":[[0],[1],[2],[3],[4],[5],[6],[7],[8],[9],[10],[11],[12],[13],[14],[15],[16],[17],[18],[19],[20],[21],[22],[23],[24],[25],[26],[27],[28],[29],[30],[31],[32],[33],[34],[35],[36],[37],[38],[39],[40],[41],[42],[43],[44],[45],[46],[47],[48],[49],[50],[51],[52],[53],[54],[55],[56],[57],[58],[59]],
+"profile":{
+"profile events":"default",
+"output size":2048,
+"frequency":800,
+"prof_unit":"AIFF"
+}
+,
+"magic number":"63b2bb9bea2f2caae1be1497e4a7509df069feea"
+}
+
